@@ -65,7 +65,7 @@ I compared the performance of 5 models:
 - Support Vector Machine
 
 **Classification Metrics to focus on**<br>
-First, it's generally preferable to have a model with high **accuracy** predicting customer churn. 
+First, it's generally preferable to have a model with high **accuracy** in predicting customer churn. 
 
 73.5% of customers currently are loyal to the service. Therefore, I want to retain these customers by correctly predicting customers likely to churn. **Precision** is the 2nd important metric. 
 
@@ -78,6 +78,11 @@ Figure 4. Models accuracy comparison on the train set.
 Figure 5. Models performance comparison on the test set.
 
 Classification metrics results from both the train and test set show that the **Logistic regression** model achieved high scores across all metrics. 
+
+![roc](img/roc_auc.png)<br>
+Figure 6. ROC and AUC chart comparing all the models' performance. 
+
+The ROC and AUC results confirmed the good performance of the Logistic regression model in predicting the customers' decision to churn or not. 
 
 ## Instructions <a name="How-To-Run-This-Project"></a>
 * Execute the codes in this notebook and follow along with the insights to understand the decisions made throughout the process.
